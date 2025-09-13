@@ -1,0 +1,8 @@
+Agents / Auditers — lightweight agents on servers, apps, DBs that capture access events (who, what, when, where, how much).
+Logger/Collector service — normalizes events, removes PII or encrypts sensitive fields, produces canonical log records.
+Signer  signs each canonical log (digital signature) using an org key.
+Permissioned Blockchain Network — nodes run by security, IT, and optionally independent auditors. Smart contract (or chaincode) stores log references (hashes), metadata, and emits events.
+Off-chain storage — large artifacts (files, full records) stored off-chain (encrypted) with a content hash (CID) placed on chain.
+Monitoring & Analytics — an engine (rules + ML) that reads new blocks/transactions and scores events for anomalies.
+Response Orchestrator — takes automated actions (kill session, revoke keys) or raises alerts to SOC.
+Audit UI — lets auditors query immutable evidence and produce reports.
